@@ -55,7 +55,10 @@ const Comments = () => {
         </button>
       )}
       {isAddingComment && (
-        <NewCommentForm quoteId={quoteId} onAddedComent={addedCommentHandler} />
+        <NewCommentForm
+          quoteId={quoteId}
+          onAddedComment={addedCommentHandler}
+        />
       )}
       {comments}
     </section>
